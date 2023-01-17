@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeDica</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/bf8fc02aad.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/main/index.css">
+
+</head>
+
+<body>
+
+    <!-- slide header================ -->
+    <section class="hero">
+        <header>
+            <nav class="navbar">
+                <div class="header_left">
+                    <ul>
+                        <li><i class="fa-sharp fa-solid fa-phone"></i><span> +91-9934-96-3848</span></li>
+                        <li><i class="fa-sharp fa-solid fa-location-dot"></i><span> Hathiberai,WestBengal</span></li>
+                        <li><i class="fa-sharp fa-solid fa-clock"></i><span> 24/7 Doctor Present</span></li>
+                    </ul>
+                </div>
+                <div class="header_right">
+                    <ul>
+                        <li><i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com/"></a></li>
+                        <li><i class="fa-brands fa-square-instagram"></i>
+                            </i><a href="https://www.instagram.com/_sonu_k_sah/"></a></li>
+                        <li><i class="fa-solid fa-envelope"></i><a
+                                href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"></a></li>
+                        <li><i class="fa-brands fa-twitter"></i><a href="https://www.twitter.com"></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+
+    <!--==Hero-Section========================-->
+    <section id="hero">
+
+
+
+        <!--==navigation====================-->
+        <nav class="navigation">
+            <!-- humburger-menu================================================== -->
+            <div id="humburger-menu" onclick="onClickMenu()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <ul class="nav" id="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Find A Doctor</a></li>
+                <li><a href="#">Order Medicine</a></li>
+                <li><a href="#">Nearest Pharmacy</a></li>
+                <li><a href="#">Call for Ambulance</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact us</a></li>
+                <label for="feedback"><span>feedback</span></label>
+                <li><textarea name="feedback" id="feedback" cols="15" rows="5"
+                        placeholder="please give me feedback"></textarea></li>
+            </ul>
+            <!-- humburger-menu end =============================================== -->
+            <!--**logo*********-->
+            <a href="/main/index.html" class="logo"><span>Me</span>Dica</a>
+            <!--**menu*********-->
+            <ul class="menu">
+                <li><a href="#"><strong>Find A Doctor</strong></a></li>
+                <li><a href="#"><strong>Our Services</strong></a></li>
+                <li><a href="#"><strong>Order Medicine</strong></a></li>
+            </ul>
+            <!--**contact*******-->
+            <a href="#" class="nav-appointment-btn">Appointment</a>
+            <a href="#" class="nav-appointment-btn">Login</a>
+        </nav><!--nav-end-->
+
+
+        <!--==Content============================-->
+        <div class="hero-content">
+            <!--**text****************-->
+            <div class="hero-text">
+                <h1>Feel Better About Finding HealthCare</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, vitae ex! Fuga similique repudiandae
+                    molestiae libero.</p>
+                <!--btns-->
+                <div class="hero-text-btns">
+
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Find Doctor's</a>
+
+                    <a href="#"><i class="fa-solid fa-check"></i> Book Appointment</a>
+
+                </div>
+            </div>
+            <!--**img*****************-->
+            <div class="hero-img">
+                <img alt="" src="/images/main-bg.png">
+            </div>
+        </div>
+
+
+    </section><!--hero-end-->
+
+
+    <!-- Appointment book===================== -->
+
+    <section>
+        <div class="container">
+            <!-- heading============================== -->
+            <div class="select">
+                <span>REQUEST FOR YOUR</span>
+                <h1 class="h1">Consultation</h1>
+            </div>
+
+
+            <!-- form======================================= -->
+            <form action="sonu.php">
+                <div class="form">
+                    <input type="text" placeholder=" PATIENT NAME">
+                </div>
+                <div class="form">
+                    <input type="number" placeholder=" AGE">
+                </div>
+
+                <div class="form">
+                    <input type="number" placeholder="CONTACT NO.">
+                </div>
+                <div class="form">
+                    <input type="email" placeholder="EMAIL">
+                </div>
+                <div class="form">
+                    <select>
+                        <option value="non" selected>CHOOSE DEPARMENT</option>
+                        <option value="Anaesthesiology">Anaesthesiology</option>
+                        <option value="Cardiothoracic">Cardiothoracic</option>
+                        <option value="Vascular surgery">Vascular surgery</option>
+                        <option value="Dentistry">Dentistry</option>
+                        <option value="ENT">ENT</option>
+                        <option value="Gastroenterology">Gastroenterology</option>
+                        <option value="Homeopathy">Homeopathy</option>
+                        <option value="Medicine">Medicine</option>
+                        <option value="Neurology">Neurology</option>
+                        <option value="Neuro Surgery">Neuro Surgery</option>
+                        <option value="Nuclear Medicine">Nuclear Medicine</option>
+                        <option value="Obstetrics">Obsterics</option>
+                        <option value="Ophthalmology">Ophthalmology</option>
+                        <option value="Orthopaedics">Orthopaedics</option>
+                        <option value="Paediatrics">paediatrics</option>
+                        <option value="Paediatric Surgery">Paediatric Surgery</option>
+                        <option value="Physical Medicine">Physical Medicine</option>
+                        <option value="Plastic Medicine">Plastic Medicine</option>
+                        <option value="Plastic Surgery">Plastic surgery</option>
+                        <option value="Psychiatry">Psychiatry</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <input type="date" placeholder="DATE">
+                </div>
+                <div class="submit_appoinment">
+                    <input type="submit" value="Book Appoinment">
+                </div>
+            </form>
+        </div>
+
+    </section>
+    <!-- Appoinment Book end ============================= -->
+    <!-- Our  history========================= -->
+    <div id="history">
+        <div class="history_topic">
+            <span>Welcome to MeDica</span>
+            <h2>Find The Best Doctor</h2>
+            <h2>With <b>MeDica</b></h2>
+        </div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem rem dolore voluptatum, nobis vero
+            necessitatibus possimus aliquam quae facilis suscipit quisquam, soluta totam voluptates tempora recusandae
+            veniam unde nostrum ut.</p>
+    </div>
+    <!-- Our history end******************************* -->
+
+    <!-- why choose us########################################################################################## -->
+    <section class="why-choose-us">
+        <hr>
+        <div class="why-choose-us-div">
+            <h5 class="h5">Why Choose Us?</h5> 
+            <h1 class="h1">Offer for you</h1>
+            <div class="why-choose-us-items01">
+                <img src="/images/doctor_q.webp" alt="">
+                <h3>Qulified Doctor</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores, enim incidunt
+                    provident natus quis modi nam fuga. Esse, voluptatibus!</p>
+            </div>
+            <div class="why-choose-us-items02">
+                <img src="https://preview.colorlib.com/theme/aesthetic/img/icons/ci-3.png.webp" alt="">
+                <h3>Certified services</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores, enim incidunt
+                    provident natus quis modi nam fuga. Esse, voluptatibus!</p>
+            </div>
+
+            <div class="why-choose-us-items03">
+                <img src="https://preview.colorlib.com/theme/aesthetic/img/icons/ci-4.png.webp" alt="">
+                <h3>Emergency care</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores, enim incidunt
+                    provident natus quis modi nam fuga. Esse, voluptatibus!</p>
+            </div>
+            <div class="why-choose-us-items04">
+                <img src="https://preview.colorlib.com/theme/aesthetic/img/icons/ci-4.png.webp" alt="">
+                <h3>Qucik Ambulance Services</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores, enim incidunt
+                    provident natus quis modi nam fuga. Esse, voluptatibus!</p>
+            </div>
+        </div>
+    </section>
+    <!-- why-choose-us-end######################################################################################-- -->
+
+    <!-- our services================================================================== -->
+    <section class="our-services">
+        <hr>
+        <div class="our-services-main">
+            <h5 class="h5">Our Services</h5>
+            <h1 class="h1">Offer for you</h1>
+            <div class="our-services-main02">
+            <div class="our-services-main03">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Qulified Doctor</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium commodi dicta sint reprehenderit excepturi et doloremque voluptatum enim saepe vel?</p>
+                        
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Certified Services</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium commodi dicta sint reprehenderit excepturi et doloremque voluptatum enim saepe vel?</p>
+                        
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Emergency Care</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium commodi dicta sint reprehenderit excepturi et doloremque voluptatum enim saepe vel?</p>
+                        
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Qucik Ambulance Services</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium commodi dicta sint reprehenderit excepturi et doloremque voluptatum enim saepe vel?</p>
+                        
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Online & Offline Services Available</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium commodi dicta sint reprehenderit excepturi et doloremque voluptatum enim saepe vel?</p>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- our services end ================================================================== -->
+
+    <section class="card">
+        <div id="class">
+            <div class="mid">
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/d5.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dr.Liwa Morra</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, beatae
+                            recusandae eligendi repudiandae itaque maxime?
+                        </p>
+                        <a href="#" class="btn btn-primary">Read More </a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/d3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ram Krishn Roy</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, beatae
+                            recusandae eligendi repudiandae itaque maxime?
+                        </p>
+                        <a href="#" class="btn btn-primary">Read More </a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/d2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Raghav Sah</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, beatae
+                            recusandae eligendi repudiandae itaque maxime?
+                        </p>
+                        <a href="#" class="btn btn-primary">Read More </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="feedback">
+        <div class="feedback-container" id="feeback-container">
+            <hr>
+            <h2>Our FeedBack </h2>
+            <div class="feedback-card">
+                <div class="feedback-card-left">
+                    <div class="feedback-card-left-row">
+
+                        <i class="fa-solid fa-user"></i>
+                        <span>sonu kumar</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, iste?</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+                <div class="feedback-card-left">
+                    <div class="feedback-card-left-row">
+
+                        <i class="fa-solid fa-user"></i>
+                        <span>sonu kumar</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, iste?</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+                <div class="feedback-card-left">
+                    <div class="feedback-card-left-row">
+
+                        <i class="fa-solid fa-user"></i>
+                        <span>sonu kumar</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, iste?</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+                <div class="feedback-card-left">
+                    <div class="feedback-card-left-row">
+
+                        <i class="fa-solid fa-user"></i>
+                        <span>sonu kumar</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, iste?</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+                <div class="feedback-card-left">
+                    <div class="feedback-card-left-row">
+
+                        <i class="fa-solid fa-user"></i>
+                        <span>sonu kumar</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, iste?</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+                <div class="feedback-card-left">
+                    <div class="feedback-card-left-row">
+
+                        <i class="fa-solid fa-user"></i>
+                        <span>sonu kumar</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, iste?</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+                <div class="feedback-card-left">
+                    <div class="feedback-card-left-row">
+
+                        <i class="fa-solid fa-user"></i>
+                        <span>sonu kumar</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, iste?</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+                <div class="feedback-card-left">
+                    <div class="feedback-card-left-row">
+
+                        <i class="fa-solid fa-user"></i>
+                        <span>sonu kumar</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, iste?</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- footer +=============================================== -->
+    <div class="footer">
+        <div class="lastcontainer">
+            <div class="row">
+                <div class="row-left">
+                    <a href="/main/project01.html" class="logo"><span>Me</span>Dica</a>
+                    <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dicta suscipit est ipsum
+                            saepe soluta quos natus eius, voluptates ab repellendus consectetur itaque praesentium autem
+                            quisquam consequatur veritatis nobis quo.</span></p>
+                </div>
+
+                <div class="row-mid">
+                    <h5>Important Link </h5>
+                    <ul class="list-mid-unstyled">
+                        <li class="mid">
+                            <i class="fa-solid fa-house"></i><a href="/main/project01.html"> Home</a>
+                        </li>
+                        <li class="mid">
+                            <i class="fa-brands fa-square-instagram"></i><a href="https://www.instagram.com/">
+                                instagram</a>
+
+                        </li>
+                        <li class="mid">
+                            <i class="fa-brands fa-facebook-f"></i><a href="https://www.facebook.com/"> facebook</a>
+                        </li>
+                        <li class="mid">
+                            <i class="fa-brands fa-twitter"></i><a href="https://www.twitter.com"> twitter</a>
+                        </li>
+                        <li class="mid">
+
+                            <i class="fa-solid fa-envelope"></i><a href="https://www.email.com"> Email</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row-left">
+                    <h5>Our Services </h5>
+                    <ul class="list-mid-unstyled">
+                        <li class="row-left-01"><a href="#">online & offline Appointment</a></li>
+                        <li class="row-left-01"><a href="#">24/7 Doctor Available</a></li>
+                        <li class="row-left-01"><a href="#">Order Medicine</a></li>
+                        <li class="row-left-01"><a href="#">Qucik Ambulance</a></li>
+                        <li class="row-left-01"><a href="#">Provide Staff</a></li>
+
+                    </ul>
+                </div>
+                <div class="row-left">
+                    <h5>Offline Services Available</h5>
+                    <ul>
+                        <li class="right">
+                            <i class="fa-sharp fa-solid fa-location-dot"></i> <a href="#">Delhi</a>
+                        </li>
+                        <li class="right">
+                            <i class="fa-sharp fa-solid fa-location-dot"></i> <a href="#">Kolkatta</a>
+                        </li>
+                        <li class="right">
+                            <i class="fa-sharp fa-solid fa-location-dot"></i> <a href="#">Mumbai</a>
+                        </li>
+                        <li class="right">
+                            <i class="fa-sharp fa-solid fa-location-dot"></i> <a href="#">Lucknow</a>
+                        </li>
+                        <li class="right">
+                            <i class="fa-sharp fa-solid fa-location-dot"></i> <a href="#">Kanpur</a>
+                        </li>
+                        <li class="right">
+                            <i class="fa-sharp fa-solid fa-location-dot"></i> <a href="#">Patna</a>
+                        </li>
+                    </ul>
+                </div><hr>
+
+<!-- footer end====================================================== -->
+
+
+                <!-- last footer ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++= -->
+                <section class="hero-last">
+                    <footer>
+                        <nav class="navbar-buttom">
+
+                            <div class="header_right_btn">
+                                <ul>
+
+                                    <li><i class="fa-regular fa-copyright"></i><span>Accept All Copyright</span></li>
+
+                                    <li> <span>Privacy Policy</span></li>
+                                    <li> <span>Terms of services</span></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </footer>
+                </section>
+                <!-- last footer end+++++++++++++++=++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                <script src="/main/script.js"></script>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
