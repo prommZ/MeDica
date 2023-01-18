@@ -459,7 +459,7 @@ ul {
     font-size: 30px;
     letter-spacing: 2px;
     margin-bottom: 45px;
-    color: 8;
+     
 }
 .our-services-main{
     max-width: 1300px;
@@ -503,10 +503,72 @@ ul {
 .header_right_btn ul li span{
     margin-right: 50px;
 }
-img { 
-    border-radius: 50%; 
-    width: 100px;
-    height: 100px;
+
+footer{
+    width: 100%;
+    
+    bottom: 0;
+    background: linear-gradient(to right, #00093c,#2d0b00);
+    color:#ffffff;
+    padding: 100px 0px 30px ;
+    
+    font-size: 13px;
+    line-height: 20px;
 }
 
+.lastcontainer{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.row-left{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.row-left h5{
+    font-size: 15px;
+}
+.class h2{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.class{
+    display: flex;
+    justify-content: center;
+}
+#class{
+    background: #000;
+}
+.member{
+    display: flex;
+    justify-content: center;
+}
 
+.card01{
+    background: white;
+    width: 400px;
+    height: 600px;
+    margin: 20px;
+    border-radius: 15px ;
+}
+.crd-img{
+    /* background-color: aqua; */
+    height: 400px;
+    margin-bottom: 15px;
+    background-size: cover;
+}
+.card-1{
+    background-image: url(/images/d2.png);
+}
+.card-2{
+    background-image: url(/images/d5.png);
+}
+.card-3{
+    background-image: url(/images/d3.png);
+}
