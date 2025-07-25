@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
-    "build": "vite build",
+    "build": "next build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
