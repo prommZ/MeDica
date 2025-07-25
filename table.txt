@@ -1,0 +1,74 @@
+-- Admin Table
+CREATE TABLE admin (
+    admin_id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    email VARCHAR(100) UNIQUE,
+    phone_no VARCHAR(15),
+    designation VARCHAR(50),
+    password VARCHAR(255),
+    salary DECIMAL(10, 2),
+    address TEXT
+);
+
+-- SuperAdmin Table
+CREATE TABLE superAdmin (
+    superAdmin_id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(100) UNIQUE,
+    password VARCHAR(255)
+);
+
+-- Doctors Table
+CREATE TABLE doctors (
+    doctor_id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    address TEXT,
+    email VARCHAR(100) UNIQUE,
+    salary DECIMAL(10, 2),
+    specialisation VARCHAR(100),
+    shift_time VARCHAR(50),
+    password VARCHAR(255)
+);
+
+-- Patient Table
+CREATE TABLE patient (
+    patient_id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    address TEXT,
+    email VARCHAR(100) UNIQUE,
+    phone_no VARCHAR(15),
+    password VARCHAR(255),
+    disease VARCHAR(100)
+);
+
+-- Bill Table
+CREATE TABLE bill (
+    bill_id INT AUTO_INCREMENT PRIMARY KEY,
+    patient_id INT,
+    medicine_cost DECIMAL(10,2) DEFAULT 0,
+    room_charge DECIMAL(10,2) DEFAULT 0,
+    misc_charge DECIMAL(10,2) DEFAULT 0,
+    operation_charge DECIMAL(10,2) DEFAULT 0,
+    FOREIGN KEY (patient_id) REFERENCES patient(patient_id) ON DELETE CASCADE
+);
+
+-- Assign Doctor Table
+CREATE TABLE assign_doctor (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    patient_id INT,
+    doctor_id INT,
+    FOREIGN KEY (patient_id) REFERENCES patient(patient_id) ON DELETE CASCADE,
+    FOREIGN KEY (doctor_id) REFERENCES doctors(doctor_id) ON DELETE CASCADE,
+    UNIQUE (patient_id) -- A patient can be assigned to only one doctor
+);
+
+-- Users (Employees) Table
+CREATE TABLE users (
+    user_id INT AUTO_INCREMENT PRIMARY KEY,
+    firstname VARCHAR(50),
+    lastname VARCHAR(50),
+    email VARCHAR(100) UNIQUE,
+    password VARCHAR(255)
+);
