@@ -16,12 +16,12 @@
   "devDependencies": {
     "cross-env": "^7.0.3"
   },
-  "scripts": {
-    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
-    "build": "next build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+ "scripts": {
+  "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+},
   "eslintConfig": {
     "extends": "react-app"
   },
